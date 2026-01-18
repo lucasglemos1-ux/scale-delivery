@@ -8,13 +8,13 @@ const DifferenceSection = () => {
   const dontDo = [
     "Campanhas de marketing genéricas",
     "Estratégias de tamanho único",
-    "Promessas vazias de conteúdo viral",
-    "Métricas de vaidade sem vendas",
+    "Promessas vazias de viralizar",
+    "Métricas de vaidade sem pedidos",
     "Táticas de curto prazo"
   ];
 
   const doDo = [
-    "Sistemas de vendas estruturados",
+    "Sistemas de pedidos estruturados",
     "Estratégias de posicionamento personalizadas",
     "Frameworks focados em conversão",
     "Modelos de receita previsível",

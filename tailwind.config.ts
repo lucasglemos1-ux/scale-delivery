@@ -51,11 +51,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        blue: {
-          glow: "hsl(var(--blue-glow))",
-          deep: "hsl(var(--blue-deep))",
-          electric: "hsl(var(--blue-electric))",
-          soft: "hsl(var(--blue-soft))",
+        orange: {
+          glow: "hsl(var(--orange-glow))",
+          deep: "hsl(var(--orange-deep))",
+          electric: "hsl(var(--orange-electric))",
+          soft: "hsl(var(--orange-soft))",
         },
       },
       borderRadius: {
@@ -84,7 +84,7 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-blue': 'linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--blue-electric)) 100%)',
+        'gradient-orange': 'linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--orange-electric)) 100%)',
       },
     },
   },

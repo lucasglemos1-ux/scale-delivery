@@ -1,4 +1,4 @@
-import { Instagram, MessageCircle, Tag, TrendingUp } from "lucide-react";
+import { Smartphone, MessageCircle, UtensilsCrossed, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation, fadeUpVariants, staggerContainer, staggerItem } from "@/hooks/useScrollAnimation";
 
@@ -7,27 +7,27 @@ const MethodSection = () => {
 
   const methods = [
     {
-      icon: Instagram,
-      title: "Posicionamento no Instagram",
-      description: "Perfil estruturado para atrair quem compra, não quem apenas segue.",
+      icon: Smartphone,
+      title: "Posicionamento Digital",
+      description: "Perfil estruturado para atrair quem pede, não quem apenas olha o cardápio.",
       result: "audiência qualificada"
     },
     {
       icon: MessageCircle,
       title: "Estrutura de Conversão no WhatsApp",
-      description: "Fluxos claros que transformam interesse em decisão de compra.",
-      result: "maior intenção de compra"
+      description: "Fluxos claros que transformam interesse em pedidos confirmados.",
+      result: "maior taxa de conversão"
     },
     {
-      icon: Tag,
-      title: "Clareza de Oferta",
-      description: "Catálogo e promoções apresentados de forma estratégica.",
-      result: "decisões mais rápidas"
+      icon: UtensilsCrossed,
+      title: "Clareza de Cardápio e Ofertas",
+      description: "Cardápio e promoções apresentados de forma estratégica para aumentar o ticket.",
+      result: "ticket médio maior"
     },
     {
       icon: TrendingUp,
-      title: "Otimização do Fluxo de Vendas",
-      description: "Cada etapa do processo calibrada para conversão.",
+      title: "Otimização do Fluxo de Pedidos",
+      description: "Cada etapa do processo calibrada para mais pedidos e recorrência.",
       result: "receita previsível"
     }
   ];
@@ -48,11 +48,11 @@ const MethodSection = () => {
         >
           <span className="text-primary text-xs sm:text-sm font-medium tracking-wider uppercase mb-3 sm:mb-4 block">O Método</span>
           <h2 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight px-1">
-            <span className="block sm:inline">SCALE COMPANY é um método proprietário,</span>{" "}
+            <span className="block sm:inline">SCALE DELIVERY é um método proprietário,</span>{" "}
             <span className="gradient-text">não um serviço genérico</span>
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
-            Um sistema completo que combina posicionamento, estrutura e conversão para criar vendas previsíveis e escaláveis. Desenvolvido especificamente para o mercado de moda.
+            Um sistema completo que combina posicionamento, estrutura e conversão para criar pedidos previsíveis e escaláveis. Desenvolvido especificamente para o mercado de delivery.
           </p>
         </motion.div>
 
@@ -69,7 +69,7 @@ const MethodSection = () => {
               className="group relative p-5 sm:p-6 md:p-7 lg:p-8 rounded-xl sm:rounded-2xl bg-card/40 border border-border/50 backdrop-blur-sm transition-all duration-500 hover:border-primary/40 hover:bg-card/60 card-glow"
             >
               {/* Icon */}
-              <div className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary/20 to-blue-electric/10 flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary/20 to-orange-electric/10 flex items-center justify-center mb-3 sm:mb-4 md:mb-5 lg:mb-6 group-hover:scale-110 transition-transform duration-300">
                 <method.icon className="w-5 h-5 sm:w-5.5 sm:h-5.5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-primary" />
               </div>
 

@@ -16,7 +16,7 @@ const PhasesSection = () => {
     {
       number: "01",
       title: "Posicionamento",
-      description: "Defina sua posição única no mercado e identidade de marca que atrai seus clientes ideais."
+      description: "Defina sua posição única no mercado de delivery e identidade que atrai seus clientes ideais."
     },
     {
       number: "02",
@@ -26,7 +26,7 @@ const PhasesSection = () => {
     {
       number: "03",
       title: "Conversão",
-      description: "Implemente estratégias comprovadas que transformam interesse em vendas consistentemente."
+      description: "Implemente estratégias comprovadas que transformam interesse em pedidos consistentes."
     },
     {
       number: "04",
@@ -39,7 +39,7 @@ const PhasesSection = () => {
     <section className="relative py-14 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 right-0 w-52 sm:w-64 md:w-80 h-52 sm:h-64 md:h-80 bg-blue-electric/10 rounded-full blur-[80px] sm:blur-[100px] md:blur-[120px]" />
+        <div className="absolute top-0 right-0 w-52 sm:w-64 md:w-80 h-52 sm:h-64 md:h-80 bg-orange-electric/10 rounded-full blur-[80px] sm:blur-[100px] md:blur-[120px]" />
         <div className="absolute bottom-0 left-0 w-52 sm:w-64 md:w-80 h-52 sm:h-64 md:h-80 bg-primary/10 rounded-full blur-[80px] sm:blur-[100px] md:blur-[120px]" />
       </div>
 

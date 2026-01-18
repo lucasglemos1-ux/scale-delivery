@@ -13,19 +13,19 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "Para quem esse método é indicado?",
-      answer: "O método SCALE COMPANY é indicado para donos de lojas de roupas que já têm um negócio rodando, mas enfrentam dificuldades com previsibilidade de vendas. É ideal para quem quer sair da dependência de marketplaces e construir um canal próprio de vendas com estrutura sólida e resultados consistentes."
+      answer: "O método SCALE DELIVERY é indicado para donos de delivery que já têm um negócio rodando, mas enfrentam dificuldades com previsibilidade de pedidos. É ideal para quem quer sair da dependência dos apps de terceiros e construir um canal próprio de vendas com estrutura sólida e resultados consistentes."
     },
     {
       question: "Como funciona o processo na prática?",
-      answer: "O processo começa com um diagnóstico estratégico gratuito, onde analisamos a situação atual da sua loja. A partir disso, desenvolvemos um plano personalizado focado em 4 pilares: posicionamento no Instagram, estrutura de conversão no WhatsApp, clareza de oferta e otimização do fluxo de vendas. Cada etapa é implementada de forma gradual e acompanhada."
+      answer: "O processo começa com um diagnóstico estratégico gratuito, onde analisamos a situação atual do seu delivery. A partir disso, desenvolvemos um plano personalizado focado em 4 pilares: posicionamento digital, estrutura de conversão no WhatsApp, clareza de cardápio e ofertas, e otimização do fluxo de pedidos. Cada etapa é implementada de forma gradual e acompanhada."
     },
     {
       question: "Em quanto tempo costumam aparecer os primeiros resultados?",
-      answer: "Os primeiros resultados variam de acordo com a estrutura atual do negócio, mas geralmente começam a aparecer nas primeiras semanas de implementação. O foco não é em resultados rápidos e passageiros, mas sim em construir uma base sólida que gere vendas previsíveis e sustentáveis a longo prazo."
+      answer: "Os primeiros resultados variam de acordo com a estrutura atual do negócio, mas geralmente começam a aparecer nas primeiras semanas de implementação. O foco não é em resultados rápidos e passageiros, mas sim em construir uma base sólida que gere pedidos previsíveis e sustentáveis a longo prazo."
     },
     {
       question: "O foco está em anúncios ou na estrutura do negócio?",
-      answer: "O foco principal está na estrutura do negócio. Acreditamos que anunciar sem ter uma estrutura de conversão sólida é desperdiçar dinheiro. Por isso, primeiro organizamos o posicionamento, a oferta e o fluxo de vendas. Os anúncios entram como amplificador de algo que já funciona organicamente."
+      answer: "O foco principal está na estrutura do negócio. Acreditamos que anunciar sem ter uma estrutura de conversão sólida é desperdiçar dinheiro. Por isso, primeiro organizamos o posicionamento, o cardápio e o fluxo de pedidos. Os anúncios entram como amplificador de algo que já funciona organicamente."
     },
     {
       question: "Como posso aplicar ou solicitar uma avaliação?",

@@ -6,10 +6,10 @@ const ProblemSection = () => {
   const { ref, isInView } = useScrollAnimation();
 
   const problems = [
-    "Posta todos os dias",
+    "Está nos apps de delivery",
     "Investe em anúncios",
-    "Tem seguidores",
-    "Mas não tem vendas previsíveis"
+    "Tem clientes fiéis",
+    "Mas não tem pedidos previsíveis"
   ];
 
   return (
@@ -26,10 +26,10 @@ const ProblemSection = () => {
             className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16"
           >
             <h2 className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 md:mb-6 leading-tight px-1">
-              A maioria das lojas de roupas fazem tudo certo
+              A maioria dos deliveries fazem tudo certo
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
-              Investem em anúncios, engajam com seguidores e seguem todos os conselhos de marketing por aí. Mesmo assim, mês após mês, o faturamento continua imprevisível. O esforço existe, mas os resultados não acompanham.
+              Estão em todos os aplicativos, investem em anúncios, engajam com clientes e seguem todos os conselhos de marketing por aí. Mesmo assim, mês após mês, o faturamento continua imprevisível. O esforço existe, mas os resultados não acompanham.
             </p>
           </motion.div>
 
