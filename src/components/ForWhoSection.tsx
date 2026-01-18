@@ -6,17 +6,17 @@ const ForWhoSection = () => {
   const { ref, isInView } = useScrollAnimation();
 
   const forYou = [
-    "Já tem loja de roupas rodando, mas falta previsibilidade de pedidos",
-    "Depende de marketplaces e quer canal próprio de vendas",
-    "Está disposto a organizar processos antes de anunciar",
+    "Já tem delivery rodando, mas falta previsibilidade de pedidos",
+    "Depende dos apps e quer canal próprio de vendas",
+    "Está disposto a organizar processos antes de escalar",
     "Pensa no negócio como empresa de longo prazo"
   ];
 
   const notForYou = [
     "Busca resultado rápido sem mudar estrutura",
-    "Quer apenas mais seguidores ou engajamento",
+    "Quer apenas mais seguidores ou curtidas",
     "Não aceita ajustar atendimento e operação",
-    "Ainda não tem produto e público validados"
+    "Ainda não tem cardápio e público validados"
   ];
 
   return (
@@ -39,7 +39,7 @@ const ForWhoSection = () => {
             Este método é para você?
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
-            SCALE COMPANY não é para todos. Funciona melhor para quem está pronto para construir algo sólido.
+            SCALE DELIVERY não é para todos. Funciona melhor para quem está pronto para construir algo sólido.
           </p>
         </motion.div>
 

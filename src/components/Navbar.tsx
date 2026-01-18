@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Bike } from "lucide-react";
 
 const WHATSAPP_NUMBER = "5534984086550";
 
@@ -59,8 +59,9 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
             {/* Logo */}
             <a href="/" className="flex items-center gap-2 z-10">
+              <Bike className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               <span className="font-display text-lg sm:text-xl font-bold gradient-text">
-                SCALE COMPANY
+                SCALE DELIVERY
               </span>
             </a>
 

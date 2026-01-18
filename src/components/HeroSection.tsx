@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Bike } from "lucide-react";
 import { motion } from "framer-motion";
 
 const WHATSAPP_NUMBER = "5534984086550";
@@ -14,8 +14,11 @@ const HeroSection = () => {
       {/* Background gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-primary/20 rounded-full blur-[80px] sm:blur-[100px] md:blur-[120px] animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-52 sm:w-64 md:w-80 h-52 sm:h-64 md:h-80 bg-blue-electric/15 rounded-full blur-[60px] sm:blur-[80px] md:blur-[100px] animate-float" style={{ animationDelay: '-3s' }} />
+        <div className="absolute bottom-1/4 right-1/4 w-52 sm:w-64 md:w-80 h-52 sm:h-64 md:h-80 bg-orange-electric/15 rounded-full blur-[60px] sm:blur-[80px] md:blur-[100px] animate-float" style={{ animationDelay: '-3s' }} />
       </div>
+
+      {/* Subtle delivery pattern overlay */}
+      <div className="absolute inset-0 delivery-pattern opacity-50" />
 
       {/* Grid pattern overlay */}
       <div 
@@ -35,8 +38,8 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-primary/30 bg-primary/5 mb-5 sm:mb-6 md:mb-8"
           >
-            <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs sm:text-sm text-muted-foreground">SCALE COMPANY</span>
+            <Bike className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
+            <span className="text-xs sm:text-sm text-muted-foreground">SCALE DELIVERY</span>
           </motion.div>
 
           {/* Main headline */}
@@ -48,7 +51,7 @@ const HeroSection = () => {
           >
             <span className="block sm:inline">Um método estruturado de</span>{" "}
             <span className="gradient-text">crescimento</span>{" "}
-            <span className="block sm:inline">para loja de roupas</span>
+            <span className="block sm:inline">para donos de delivery</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -58,7 +61,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mb-3 sm:mb-4 px-2"
           >
-            Não é sobre anunciar mais. É sobre vender melhor.
+            Não é sobre entregar mais. É sobre vender melhor.
           </motion.p>
 
           {/* CTA buttons */}
