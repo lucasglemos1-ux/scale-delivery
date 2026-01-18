@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Bike } from "lucide-react";
+import { ArrowRight, Bike, Package, MapPin, Clock, UtensilsCrossed, Truck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const WHATSAPP_NUMBER = "5534984086550";
@@ -9,16 +9,57 @@ const HeroSection = () => {
     window.open(`https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}`, "_blank", "noopener,noreferrer");
   };
 
+  const floatingIcons = [
+    { Icon: Bike, className: "top-[15%] left-[8%] w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12", delay: 0 },
+    { Icon: Package, className: "top-[25%] right-[10%] w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10", delay: 0.5 },
+    { Icon: MapPin, className: "bottom-[30%] left-[5%] w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11", delay: 1 },
+    { Icon: Clock, className: "top-[40%] right-[6%] w-6 h-6 sm:w-7 sm:h-7 md:w-9 md:h-9", delay: 1.5 },
+    { Icon: UtensilsCrossed, className: "bottom-[20%] right-[12%] w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10", delay: 2 },
+    { Icon: Truck, className: "top-[60%] left-[10%] w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9", delay: 2.5 },
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Background gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-primary/20 rounded-full blur-[80px] sm:blur-[100px] md:blur-[120px] animate-float" />
         <div className="absolute bottom-1/4 right-1/4 w-52 sm:w-64 md:w-80 h-52 sm:h-64 md:h-80 bg-orange-electric/15 rounded-full blur-[60px] sm:blur-[80px] md:blur-[100px] animate-float" style={{ animationDelay: '-3s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[600px] md:w-[800px] h-[500px] sm:h-[600px] md:h-[800px] bg-primary/5 rounded-full blur-[150px]" />
+      </div>
+
+      {/* Floating delivery icons with glow */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {floatingIcons.map(({ Icon, className, delay }, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: delay + 0.5 }}
+            className={`absolute ${className}`}
+          >
+            <motion.div
+              animate={{ 
+                y: [0, -15, 0],
+                rotate: [0, 5, -5, 0]
+              }}
+              transition={{ 
+                duration: 4 + index * 0.5, 
+                repeat: Infinity, 
+                ease: "easeInOut",
+                delay: delay
+              }}
+              className="relative"
+            >
+              {/* Glow effect behind icon */}
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl scale-150" />
+              <Icon className="relative text-primary/15 drop-shadow-[0_0_15px_hsl(25_95%_53%/0.3)]" />
+            </motion.div>
+          </motion.div>
+        ))}
       </div>
 
       {/* Subtle delivery pattern overlay */}
-      <div className="absolute inset-0 delivery-pattern opacity-50" />
+      <div className="absolute inset-0 delivery-pattern opacity-30" />
 
       {/* Grid pattern overlay */}
       <div 
