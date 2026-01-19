@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import { Bike } from "lucide-react";
 
-const Footer = () => {
+const Footer = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <footer className="relative py-8 sm:py-10 md:py-12 border-t border-border/30">
+    <footer ref={ref} className="relative py-8 sm:py-10 md:py-12 border-t border-border/30">
       <div className="container px-5 sm:px-6 md:px-8">
         <div className="flex flex-col items-center gap-4 sm:gap-5 md:gap-6 md:flex-row md:justify-between">
           <div className="flex flex-col items-center md:items-start gap-1.5 sm:gap-2 text-center md:text-left">
@@ -22,6 +23,8 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
+
+Footer.displayName = "Footer";
 
 export default Footer;
